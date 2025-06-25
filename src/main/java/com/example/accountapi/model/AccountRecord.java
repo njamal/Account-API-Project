@@ -1,11 +1,17 @@
 package com.example.accountapi.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
+import org.hibernate.Hibernate;
+
+import java.util.Objects;
 
 @Entity
 @Table(name = "account_record")
-@Data
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
 public class AccountRecord {
 
     @Id
@@ -23,4 +29,17 @@ public class AccountRecord {
 
     @Version
     private Integer version; // For Optimistic Locking
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        AccountRecord that = (AccountRecord) o;
+        return id != null && Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

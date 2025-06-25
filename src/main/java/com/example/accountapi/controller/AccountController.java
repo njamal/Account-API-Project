@@ -35,15 +35,6 @@ public class AccountController {
                 PageRequest.of(page, size));
     }
 
-//    @PutMapping("/{id}")
-//    public ResponseEntity<AccountRecord> updateDescription(
-//            @PathVariable Long id,
-//            @RequestParam String description) {
-//
-//        AccountRecord updatedRecord = accountService.updateDescription(id, description);
-//        return ResponseEntity.ok(updatedRecord);
-//    }
-
     @PutMapping("/{id}")
     @Operation(summary = "Update account description", description = "Updates the description of an account by ID with version control.")
     public ResponseEntity<AccountRecord> updateDescription(
@@ -75,6 +66,15 @@ public class AccountController {
 //            e.printStackTrace();
 //            return ResponseEntity.status(500).body("File processing failed: " + e.getMessage());
 //        }
+//    }
+
+//    @PutMapping("/{id}")
+//    public ResponseEntity<AccountRecord> updateDescription(
+//            @PathVariable Long id,
+//            @RequestParam String description) {
+//
+//        AccountRecord updatedRecord = accountService.updateDescription(id, description);
+//        return ResponseEntity.ok(updatedRecord);
 //    }
 
 //    @PutMapping("/customer/{customerId}")

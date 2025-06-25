@@ -29,10 +29,10 @@ public class AccountService {
             return accountRepository.findAll(pageable);
         }
 
-        return accountRepository.findByCustomerIdContainingIgnoreCaseOrAccountNumberContainingIgnoreCaseOrDescriptionContainingIgnoreCase(
-                isCustomerIdEmpty ? "" : customerId,
-                isAccountNumberEmpty ? "" : accountNumber,
-                isDescriptionEmpty ? "" : description,
+        return accountRepository.findByCustomerIdContainingOrAccountNumberContainingOrDescriptionContaining(
+                isCustomerIdEmpty ? null : customerId,
+                isAccountNumberEmpty ? null : accountNumber,
+                isDescriptionEmpty ? null : description,
                 pageable);
     }
 
