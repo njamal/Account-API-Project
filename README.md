@@ -10,7 +10,7 @@ Update account descriptions with concurrency control.
 ## 🚀 Features
 ✅ Batch file processing via REST API.
 
-✅ Using Maven as the build and dependency management tool for your RESTful API project.
+✅ Using Maven as the build and dependency management tool for RESTful API project.
 
 ✅ Pagination and dynamic search (by Customer ID, Account Number, Description).
 
@@ -82,7 +82,7 @@ Repository Pattern: Simplifies data access.
 
 Service Pattern: Handles business logic, easy to maintain and test.
 
-DTO Pattern: Clean API request/response data transfer.
+## DTO Pattern: Clean API request/response data transfer.
 
 These patterns ensure clean code, scalability, and testability.
 
