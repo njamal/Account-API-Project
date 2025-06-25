@@ -1,6 +1,6 @@
 # Account API Project
 
-## 🚀 Project Overview
+## 🚀 Project Overview.
 Spring Boot REST API to upload account data from a text file, search, and update records with optimistic locking and file upload support.
 
 ## 🛠 Tech Stack
