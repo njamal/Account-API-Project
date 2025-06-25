@@ -20,7 +20,7 @@ Spring Boot REST API to upload account data from a text file, search, and update
 
 ## 📊 Diagrams
 ### Class Diagram
-![Class Diagram](your-class-diagram-image-link-here)
+![Activity Diagram - Update Description](https://github.com/njamal/Account-API-Project/blob/main/class-diagram.png?raw=true)
 
 ### Activity Diagram - File Upload
 ![Activity Diagram - File Upload](your-upload-activity-diagram-image-link-here)
