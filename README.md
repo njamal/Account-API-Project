@@ -10,7 +10,7 @@ Update account descriptions with concurrency control.
 ## 🚀 Features
 ✅ Batch file processing via REST API.
 
-✅ RESTful API for CRUD operations.
+✅ Using Maven as the build and dependency management tool for your RESTful API project.
 
 ✅ Pagination and dynamic search (by Customer ID, Account Number, Description).
 
