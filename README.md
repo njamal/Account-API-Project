@@ -26,7 +26,7 @@ Spring Boot REST API to upload account data from a text file, search, and update
 ![Activity Diagram - File Upload](https://github.com/njamal/Account-API-Project/blob/main/Activity_Diagram_File_Upload.png?raw=true)
 
 ### Activity Diagram - Update Description
-![Activity Diagram - Update Description](your-update-activity-diagram-image-link-here)
+![Activity Diagram - Update Description](https://github.com/njamal/Account-API-Project/blob/main/Activity_Diagram_Update_Description_Flow.png?raw=true)
 
 ## ✅ Running the Project
 1. Setup PostgreSQL database.
