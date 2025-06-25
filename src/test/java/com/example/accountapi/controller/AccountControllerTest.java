@@ -27,7 +27,7 @@ class AccountControllerTest {
     private MockMvc mockMvc;
 
     @Autowired
-    private AccountService accountService;git
+    private AccountService accountService;
 
     @Autowired
     private FileBatchService fileBatchService;
