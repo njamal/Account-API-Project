@@ -1,0 +1,132 @@
+{
+  "info": {
+    "name": "Account API Project",
+    "_postman_id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+    "description": "Postman Collection for Account API Project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Upload Account File",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": ""
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8989/api/accounts/upload",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8989",
+          "path": ["api", "accounts", "upload"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Retrieve All Accounts (No Filter)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8989/api/accounts?page=0&size=10",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8989",
+          "path": ["api", "accounts"],
+          "query": [
+            { "key": "page", "value": "0" },
+            { "key": "size", "value": "10" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search by Customer ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8989/api/accounts?customerId=CUST001&page=0&size=10",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8989",
+          "path": ["api", "accounts"],
+          "query": [
+            { "key": "customerId", "value": "CUST001" },
+            { "key": "page", "value": "0" },
+            { "key": "size", "value": "10" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search by Account Number",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8989/api/accounts?accountNumber=ACC12345&page=0&size=10",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8989",
+          "path": ["api", "accounts"],
+          "query": [
+            { "key": "accountNumber", "value": "ACC12345" },
+            { "key": "page", "value": "0" },
+            { "key": "size", "value": "10" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search by Description",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8989/api/accounts?description=First&page=0&size=10",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8989",
+          "path": ["api", "accounts"],
+          "query": [
+            { "key": "description", "value": "First" },
+            { "key": "page", "value": "0" },
+            { "key": "size", "value": "10" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Account Description",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8989/api/accounts/1?description=Updated%20Description",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8989",
+          "path": ["api", "accounts", "1"],
+          "query": [
+            { "key": "description", "value": "Updated Description" }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
