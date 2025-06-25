@@ -1,7 +1,2 @@
-ACC77711	CUST007	Account11
-ACC88812	CUST008	Account12
-
-GET http://localhost:8989/api/accounts
-PUT http://localhost:8989/api/accounts/8?description=Updated+Description
-PUT http://localhost:8989/api/accounts/customer/CUST007?description=Account+Updated+Description 
-POST http://localhost:8989/api/accounts/upload BODY ;file , account.TXT
+ACC77713	CUST013	Account13
+ACC88814	CUST014	Account14
